@@ -11,7 +11,7 @@ program.command('get <url>').description('Make a GET request').action(async (url
         const response = await axios.get(url);
         console.log(chalk.greenBright(JSON.stringify(response.data, null, 2)))
     } catch (error) {
-        console.error(chalk.redBright(error.messagr))
+        console.error(chalk.redBright(error.message))
     }
 });
 
